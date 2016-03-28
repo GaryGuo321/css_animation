@@ -61,8 +61,8 @@
     margin: 0;
 }
 
-
-.a{
+/*ËÑ∏*/
+.face-blue{
     width: 230px;
     height: 240px;
     background-color: #00a0e8;
@@ -76,7 +76,7 @@
     top: 73px;
 }
 
-.b{
+.face-white{
     width: 200px;
     height: 200px;
     border: 2px solid #000;
@@ -87,55 +87,55 @@
     top: 120px;
 }
 
-/*¡Ω∏ˆ—€æ¶*/
+/*ÁúºÁùõ*/
 
-.c,.d{
+.eye-left,.eye-right{
     width: 47px;
     height: 62px;
     background-color: #fff;
     border: 2px solid #000;
     border-radius: 50% / 50%;
 }
-.c{
+.eye-left{
     position: absolute;
     left: 404px;
     top: 96px;
     -webkit-transform: rotateZ(-4deg);
 }
-.d{
+.eye-right{
     position: absolute;
     left: 454px;
     top: 96px;
     -webkit-transform: rotateZ(4deg);
 }
-.h,.i{
+.eye-left-black,.eye-right-black{
     width: 17px;
     height: 22px;
     border-radius: 50% / 50%;
     background-color: #000;
 }
-.h{
+.eye-left-black{
     position: absolute;
     left: 430px;
     top: 120px;
 }
-.i{
+.eye-right-black{
     position: absolute;
     left: 461px;
     top: 120px;
 }
-.j,.k{
+.eye-left-white,.eye-right-white{
     width: 7px;
     height: 10px;
     background-color: #fff;
     border-radius: 50% / 50%;
 }
-.j{
+.eye-left-white{
     position: absolute;
     left: 437px;
     top: 126px;
 }
-.k{
+.eye-right-white{
     position: absolute;
     left: 463px;
     top: 125px;
@@ -143,9 +143,8 @@
 
 
 
-/*∫Ï…´µƒŒßΩÌ*/
-
-.e{
+/*Âõ¥Â∑æ*/
+.scarf-two{
     width: 165px;
     height: 20px;
     background-color: #fff;
@@ -155,7 +154,7 @@
     left: 374px;
     top: 266px;
 }
-.f{
+.scarf-three{
     width: 160px;
     height: 16px;
     border-left: 2px solid #000;
@@ -167,7 +166,7 @@
     top: 280px;
 }
 
-.g{
+.scarf-one{
     width: 160px;
     height: 20px;
     border-bottom: 3px solid #000;
@@ -179,10 +178,9 @@
     background-color: #e2002a;
 }
 
+/*ÈºªÂ≠êÂò¥Â∑¥*/
 
-/*±«◊”*/
-
-.l{
+.nose-red{
     width: 27px;
     height: 27px;
     border: 2px solid #000;
@@ -192,7 +190,7 @@
     left: 439px;
     top: 151px;
 }
-.m{
+.nose-white{
     width: 9px;
     height: 10px;
     background-color: #fff;
@@ -203,14 +201,14 @@
 }
 
 
-.n{
+.nose-line{
     height: 84px;
     border-right: 2px solid #000;
     position: absolute;
     left: 454px;
     top: 180px;
 }
-.o{
+.mouse{
     width: 40px;
     height: 0px;
     border: 2px solid #000;
@@ -223,9 +221,8 @@
     -webkit-animation: smile 3s ease 2.5s;
 }
 
-/*∫˙◊”*/
-
-.p{
+/*ËÉ°È°ª*/
+.beard-left-one{
     height: 70px;
     border-left: 2px solid #000;
     position: absolute;
@@ -233,7 +230,7 @@
     top: 131px;
     transform: rotateZ(116deg);
 }
-.q{
+.beard-right-one{
     height: 70px;
     border-left: 2px solid #000;
     position: absolute;
@@ -241,7 +238,7 @@
     top: 129px;
     transform: rotateZ(238deg);
 }
-.r{
+.beard-right-two{
     height: 70px;
     border-left: 2px solid #000;
     position: absolute;
@@ -249,7 +246,7 @@
     top: 161px;
     transform: rotateZ(267deg);
 }
-.s{
+.beard-left-two{
     height: 70px;
     border-left: 2px solid #000;
     position: absolute;
@@ -257,7 +254,7 @@
     top: 161px;
     transform: rotateZ(274deg);
 }
-.t{
+.beard-left-three{
     height: 70px;
     border-left: 2px solid #000;
     position: absolute;
@@ -265,7 +262,7 @@
     top: 194px;
     transform: rotateZ(73deg);
 }
-.u{
+.beard-right-three{
     height: 72px;
     border-left: 2px solid #000;
     position: absolute;
@@ -275,7 +272,7 @@
 }
 
 
-.v{
+.belly-blue{
     width: 160px;
     height: 145px;
     background-color: #00a0e8;
@@ -285,7 +282,7 @@
     left: 376px;
     top: 292px;
 }
-.w{
+.belly-white{
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -295,7 +292,8 @@
     left: 384px;
     top: 281px;
 }
-.x{
+/*Âè£Ë¢ã*/
+.pocket{
     width: 112px;
     height: 62px;
     border-radius: 0 0 62px 62px;
@@ -306,10 +304,12 @@
     top: 348px;
 }
 
+/*ÈìÉÈìõ*/
 
-/*¡ÂÓı*/
-
-.y{
+.jingle{
+    position: relative;
+}
+.jin-big-circle{
     width: 30px;
     height: 30px;
     border: 2px solid #000;
@@ -319,7 +319,7 @@
     left: 439px;
     top: 293px;
 }
-.z{
+.cross-l-two{
     width: 38px;
     height: 10px;
     border-top: 2px solid #000;
@@ -328,7 +328,7 @@
     left: 436px;
     top: 302px;
 }
-.aa{
+.cross-l-one{
     width: 34px;
     height: 10px;
     border-left: 2px solid #000;
@@ -339,7 +339,7 @@
     top: 302px;
     background-color: #ffe438;
 }
-.ab{
+.cross-l-three{
     width: 38px;
     height: 10px;
     border-top: 2px solid #000;
@@ -348,7 +348,7 @@
     left: 437px;
     top: 305px;
 }
-.ac{
+.jin-small-circle{
     width: 5px;
     height: 5px;
     border: 2px solid #000;
@@ -358,7 +358,7 @@
     left: 452px;
     top: 311px;
 }
-.ad{
+.jin-line{
     height: 5px;
     border: 1px solid #000;
     position: absolute;
@@ -366,7 +366,7 @@
     top: 319px;
 }
 
-.af{
+.gap{
     width: 20px;
     height: 8px;
     background-color: #fff;
@@ -377,7 +377,8 @@
     left: 446px;
     top: 427px;
 }
-.ae {
+/*ËÖø*/
+.leg-left {
     width: 75px;
     height: 130px;
     background-color: #00a0e8;
@@ -391,7 +392,7 @@
     top: 306px;
     transform: rotateZ(-3deg);
 }
-.ak{
+.leg-right{
     width: 75px;
     height: 130px;
     background-color: #00a0e8;
@@ -407,7 +408,7 @@
 }
 
 
-.ag{
+.left-arm{
     width: 25px;
     height: 50px;
     background-color: #00a0e8;
@@ -419,7 +420,7 @@
     left: 3px;
     /* top: 298px; */
 }
-.ah{
+.left-finger{
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -430,7 +431,7 @@
     top: 36px;
 }
 
-.ai{
+.right-arm{
     width: 25px;
     height: 50px;
     background-color: #00a0e8;
@@ -441,7 +442,7 @@
     left: 529px;
     top: 291px;
 }
-.aj{
+.right-finger{
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -452,7 +453,7 @@
     top: 324px;
 }
 
-.al{
+.foot-right{
     width: 78px;
     height: 37px;
     border: 2px solid #000;
@@ -465,7 +466,7 @@
     left: 466px;
     top: 423px;
 }
-.am{
+.foot-left{
     width: 78px;
     height: 37px;
     border: 2px solid #000;
@@ -479,7 +480,7 @@
     top: 423px;
 }
 
-.ag-ah{
+.left-hand{
     width: 35px;
     height: 70px;
     transform-origin: 50% 0;
