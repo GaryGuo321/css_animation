@@ -1,16 +1,65 @@
-@-webkit-keyframes wave-hand {
-    0%{transform: rotateZ(40deg);}
-    20%{transform: rotateZ(118deg);}
-    30%{transform: rotateZ(100deg)}
-    40%{transform: rotateZ(118deg)}
-    50%{transform: rotateZ(100deg)}
-    60%{transform: rotateZ(118deg)}
-    70%{transform: rotateZ(100deg)}
-    80%{transform: rotateZ(118deg)}
-    100%{transform: rotateZ(40deg);}
+@-webkit-keyframes wave-left-hand {
+    0% {
+        transform: rotateZ(40deg);
+    }
+    20% {
+        transform: rotateZ(126deg);
+    }
+    30% {
+        transform: rotateZ(110deg)
+    }
+    40% {
+        transform: rotateZ(126deg)
+    }
+    50% {
+        transform: rotateZ(110deg)
+    }
+    60% {
+        transform: rotateZ(126deg)
+    }
+    70% {
+        transform: rotateZ(110deg)
+    }
+    80% {
+        transform: rotateZ(126deg)
+    }
+    100% {
+        transform: rotateZ(40deg);
+    }
 }
+
+@-webkit-keyframes wave-right-hand {
+    0% {
+        transform: rotateZ(-40deg);
+    }
+    20% {
+        transform: rotateZ(-126deg);
+    }
+    30% {
+        transform: rotateZ(-110deg)
+    }
+    40% {
+        transform: rotateZ(-126deg)
+    }
+    50% {
+        transform: rotateZ(-110deg)
+    }
+    60% {
+        transform: rotateZ(-126deg)
+    }
+    70% {
+        transform: rotateZ(-110deg)
+    }
+    80% {
+        transform: rotateZ(-126deg)
+    }
+    100% {
+        transform: rotateZ(-40deg);
+    }
+}
+
 @-webkit-keyframes smile {
-    0%{
+    0% {
         width: 40px;
         height: 0px;
         border: 2px solid #000;
@@ -21,7 +70,7 @@
         top: 262px;
         /* background-color: red; */
     }
-    20%{
+    20% {
         width: 140px;
         height: 65px;
         border: 2px solid #000;
@@ -32,7 +81,7 @@
         top: 199px;
         /*background-color: red;*/
     }
-    55%{
+    55% {
         width: 140px;
         height: 65px;
         border: 2px solid #000;
@@ -43,7 +92,7 @@
         top: 199px;
         /*background-color: red;*/
     }
-    80%{
+    80% {
         width: 40px;
         height: 0px;
         border: 2px solid #000;
@@ -56,13 +105,23 @@
     }
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
+
 /*脸*/
-.face-blue{
+
+.face {
+    position: absolute;
+    top: 72px;
+    left: 339px;
+    width: 234px;
+    height: 244px;
+}
+
+.face-blue {
     width: 230px;
     height: 240px;
     background-color: #00a0e8;
@@ -72,89 +131,114 @@
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     position: absolute;
-    left: 339px;
-    top: 73px;
+    left: 0;
+    top: 0;
 }
 
-.face-white{
+.face-white {
     width: 200px;
     height: 200px;
     border: 2px solid #000;
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
-    left: 354px;
-    top: 120px;
+    left: 15px;
+    top: 47px;
 }
+
 
 /*眼睛*/
 
-.eye-left,.eye-right{
+.eye {
+    position: absolute;
+    left: 404px;
+    top: 96px;
+}
+
+.eye-left,
+.eye-right {
     width: 47px;
     height: 62px;
     background-color: #fff;
     border: 2px solid #000;
     border-radius: 50% / 50%;
 }
-.eye-left{
+
+.eye-left {
     position: absolute;
-    left: 404px;
-    top: 96px;
+    left: 0;
+    top: 0;
     -webkit-transform: rotateZ(-4deg);
 }
-.eye-right{
+
+.eye-right {
     position: absolute;
-    left: 454px;
-    top: 96px;
+    left: 50px;
+    top: 0;
     -webkit-transform: rotateZ(4deg);
 }
-.eye-left-black,.eye-right-black{
+
+.eye-left-black,
+.eye-right-black {
     width: 17px;
     height: 22px;
     border-radius: 50% / 50%;
     background-color: #000;
 }
-.eye-left-black{
+
+.eye-left-black {
     position: absolute;
-    left: 430px;
-    top: 120px;
+    left: 26px;
+    top: 24px;
 }
-.eye-right-black{
+
+.eye-right-black {
     position: absolute;
-    left: 461px;
-    top: 120px;
+    left: 57px;
+    top: 24px;
 }
-.eye-left-white,.eye-right-white{
+
+.eye-left-white,
+.eye-right-white {
     width: 7px;
     height: 10px;
     background-color: #fff;
     border-radius: 50% / 50%;
 }
-.eye-left-white{
+
+.eye-left-white {
     position: absolute;
-    left: 437px;
-    top: 126px;
-}
-.eye-right-white{
-    position: absolute;
-    left: 463px;
-    top: 125px;
+    left: 33px;
+    top: 30px;
 }
 
+.eye-right-white {
+    position: absolute;
+    left: 59px;
+    top: 29px;
+}
 
 
 /*围巾*/
-.scarf-two{
+
+.scarf {
+    position: absolute;
+    left: 374px;
+    top: 266px;
+}
+
+.scarf-two {
     width: 165px;
     height: 20px;
     background-color: #fff;
     border-bottom: 3px solid #000;
     border-radius: 50% / 50%;
     position: absolute;
-    left: 374px;
-    top: 266px;
+    left: 0px;
+    top: 0px;
 }
-.scarf-three{
+
+.scarf-three {
     width: 160px;
     height: 16px;
     border-left: 2px solid #000;
@@ -162,25 +246,26 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: absolute;
-    left: 374px;
-    top: 280px;
+    left: 0px;
+    top: 14px;
 }
 
-.scarf-one{
+.scarf-one {
     width: 160px;
     height: 20px;
     border-bottom: 3px solid #000;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     position: absolute;
-    left: 376px;
-    top: 280px;
+    left: 2px;
+    top: 14px;
     background-color: #e2002a;
 }
 
+
 /*鼻子嘴巴*/
 
-.nose-red{
+.nose-red {
     width: 27px;
     height: 27px;
     border: 2px solid #000;
@@ -190,7 +275,8 @@
     left: 439px;
     top: 151px;
 }
-.nose-white{
+
+.nose-white {
     width: 9px;
     height: 10px;
     background-color: #fff;
@@ -200,15 +286,15 @@
     top: 158px;
 }
 
-
-.nose-line{
+.nose-line {
     height: 84px;
     border-right: 2px solid #000;
     position: absolute;
     left: 454px;
     top: 180px;
 }
-.mouse{
+
+.mouse {
     width: 40px;
     height: 0px;
     border: 2px solid #000;
@@ -221,58 +307,70 @@
     -webkit-animation: smile 3s ease 2.5s;
 }
 
+
 /*胡须*/
-.beard-left-one{
-    height: 70px;
-    border-left: 2px solid #000;
-    position: absolute;
-    left: 389px;
-    top: 131px;
-    transform: rotateZ(116deg);
-}
-.beard-right-one{
-    height: 70px;
-    border-left: 2px solid #000;
-    position: absolute;
-    left: 517px;
-    top: 129px;
-    transform: rotateZ(238deg);
-}
-.beard-right-two{
-    height: 70px;
-    border-left: 2px solid #000;
-    position: absolute;
-    left: 526px;
-    top: 161px;
-    transform: rotateZ(267deg);
-}
-.beard-left-two{
-    height: 70px;
-    border-left: 2px solid #000;
+
+.beard {
     position: absolute;
     left: 383px;
-    top: 161px;
-    transform: rotateZ(274deg);
+    top: 131px;
 }
-.beard-left-three{
+
+.beard-left-one {
     height: 70px;
     border-left: 2px solid #000;
     position: absolute;
-    left: 386px;
-    top: 194px;
+    left: 6px;
+    top: 2px;
+    transform: rotateZ(116deg);
+}
+
+.beard-right-one {
+    height: 70px;
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 134px;
+    top: 0px;
+    transform: rotateZ(238deg);
+}
+
+.beard-right-two {
+    height: 70px;
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 143px;
+    top: 32px;
+    transform: rotateZ(267deg);
+}
+
+.beard-left-two {
+    height: 70px;
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 0px;
+    top: 32px;
+    transform: rotateZ(274deg);
+}
+
+.beard-left-three {
+    height: 70px;
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 3px;
+    top: 65px;
     transform: rotateZ(73deg);
 }
-.beard-right-three{
+
+.beard-right-three {
     height: 72px;
     border-left: 2px solid #000;
     position: absolute;
-    left: 524px;
-    top: 193px;
+    left: 141px;
+    top: 64px;
     transform: rotateZ(106deg);
 }
 
-
-.belly-blue{
+.belly-blue {
     width: 160px;
     height: 145px;
     background-color: #00a0e8;
@@ -282,7 +380,8 @@
     left: 376px;
     top: 292px;
 }
-.belly-white{
+
+.belly-white {
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -292,8 +391,11 @@
     left: 384px;
     top: 281px;
 }
+
+
 /*口袋*/
-.pocket{
+
+.pocket {
     width: 112px;
     height: 62px;
     border-radius: 0 0 62px 62px;
@@ -304,69 +406,74 @@
     top: 348px;
 }
 
+
 /*铃铛*/
 
-.jingle{
-    position: relative;
+.jingle {
+    position: absolute;
+    left: 437px;
+    top: 293px;
 }
-.jin-big-circle{
+
+.jin-big-circle {
     width: 30px;
     height: 30px;
     border: 2px solid #000;
     border-radius: 50%;
     background-color: #ffe438;
     position: absolute;
-    left: 439px;
-    top: 293px;
+    left: 2px;
 }
-.cross-l-two{
+
+.cross-l-two {
     width: 38px;
     height: 10px;
     border-top: 2px solid #000;
     border-radius: 50% / 50%;
     position: absolute;
-    left: 436px;
-    top: 302px;
+    top: 12px;
 }
-.cross-l-one{
+
+.cross-l-one {
     width: 34px;
     height: 10px;
     border-left: 2px solid #000;
     border-right: 2px solid #000;
     border-radius: 50% / 50%;
     position: absolute;
-    left: 437px;
-    top: 302px;
+    top: 9px;
     background-color: #ffe438;
 }
-.cross-l-three{
+
+.cross-l-three {
     width: 38px;
     height: 10px;
     border-top: 2px solid #000;
     border-radius: 50% / 50%;
     position: absolute;
-    left: 437px;
-    top: 305px;
+    top: 9px;
 }
-.jin-small-circle{
+
+.jin-small-circle {
     width: 5px;
     height: 5px;
     border: 2px solid #000;
     border-radius: 50%;
     background-color: #635544;
     position: absolute;
-    left: 452px;
-    top: 311px;
+    top: 19px;
+    left: 15px;
 }
-.jin-line{
+
+.jin-line {
     height: 5px;
     border: 1px solid #000;
     position: absolute;
-    left: 456px;
-    top: 319px;
+    left: 18px;
+    top: 25px;
 }
 
-.gap{
+.gap {
     width: 20px;
     height: 8px;
     background-color: #fff;
@@ -377,7 +484,10 @@
     left: 446px;
     top: 427px;
 }
+
+
 /*腿*/
+
 .leg-left {
     width: 75px;
     height: 130px;
@@ -392,7 +502,8 @@
     top: 306px;
     transform: rotateZ(-3deg);
 }
-.leg-right{
+
+.leg-right {
     width: 75px;
     height: 130px;
     background-color: #00a0e8;
@@ -407,53 +518,7 @@
     transform: rotateZ(2deg);
 }
 
-
-.left-arm{
-    width: 25px;
-    height: 50px;
-    background-color: #00a0e8;
-    border: 2px solid #000;
-    border-radius: 41% / 85%;
-    position: absolute;
-    /* transform-origin: 50% 0; */
-    /* transform: rotateZ(39deg); */
-    left: 3px;
-    /* top: 298px; */
-}
-.left-finger{
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 50%;
-    position: absolute;
-    /* left: 8px; */
-    top: 36px;
-}
-
-.right-arm{
-    width: 25px;
-    height: 50px;
-    background-color: #00a0e8;
-    border: 2px solid #000;
-    border-radius: 41% / 85%;
-    position: absolute;
-    transform: rotateZ(-40deg);
-    left: 529px;
-    top: 291px;
-}
-.right-finger{
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 50%;
-    position: absolute;
-    left: 550px;
-    top: 324px;
-}
-
-.foot-right{
+.foot-right {
     width: 78px;
     height: 37px;
     border: 2px solid #000;
@@ -466,7 +531,8 @@
     left: 466px;
     top: 423px;
 }
-.foot-left{
+
+.foot-left {
     width: 78px;
     height: 37px;
     border: 2px solid #000;
@@ -480,7 +546,7 @@
     top: 423px;
 }
 
-.left-hand{
+.left-hand {
     width: 35px;
     height: 70px;
     transform-origin: 50% 0;
@@ -488,7 +554,63 @@
     left: 367px;
     top: 299px;
     transform: rotateZ(40deg);
-    -webkit-animation: wave-hand 2s cubic-bezier(0.31, 0.31, 0.61, 0.6);
-    -webkit-animation-delay: 2.5s;
+    -webkit-animation: wave-left-hand 2s cubic-bezier(0.31, 0.31, 0.61, 0.6) 2.5s;
+}
 
+.left-arm {
+    width: 25px;
+    height: 50px;
+    background-color: #00a0e8;
+    border: 2px solid #000;
+    border-radius: 41% / 85%;
+    position: absolute;
+    /* transform-origin: 50% 0; */
+    /* transform: rotateZ(39deg); */
+    left: 3px;
+    /* top: 298px; */
+}
+
+.left-finger {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    /* left: 8px; */
+    top: 36px;
+}
+
+.right-hand {
+    width: 35px;
+    height: 70px;
+    transform-origin: 50% 0;
+    position: absolute;
+    left: 512px;
+    top: 299px;
+    transform: rotateZ(-40deg);
+    -webkit-animation: wave-right-hand 2s cubic-bezier(0.31, 0.31, 0.61, 0.6) 2.5s;
+}
+
+.right-arm {
+    width: 25px;
+    height: 50px;
+    background-color: #00a0e8;
+    border: 2px solid #000;
+    border-radius: 41% / 85%;
+    position: absolute;
+    /*transform: rotateZ(-40deg);*/
+    left: 3px;
+    /*top: 291px;*/
+}
+
+.right-finger {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    /*left: 550px;*/
+    top: 36px;
 }
